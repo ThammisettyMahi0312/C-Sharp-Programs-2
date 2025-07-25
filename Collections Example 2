@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Threading.Tasks;
+
+namespace ProgramsPart4
+{
+    internal class Example2
+    {
+        static void Main()
+        {
+            Employ employ1 = new Employ();
+            employ1.Empno = 1;
+            employ1.Name = "Mani";
+            employ1.Basic = 34656.43;
+
+            Employ employ2 = new Employ();
+            employ2.Empno = 2;
+            employ2.Name = "Dharani";
+            employ2.Basic = 92353.31;
+
+            Employ employ3 = new Employ();
+            employ3.Empno = 3;
+            employ3.Name = "Laasya";
+            employ3.Basic = 84657.48;
+
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(employ1);
+            arrayList.Add(employ2);
+            arrayList.Add(employ3);
+            //arrayList.Add(12);
+
+            foreach (object obj in arrayList)
+            {
+                Employ employ = (Employ)obj;
+                Console.WriteLine(employ);
+            }
+        }
+    }
+}
