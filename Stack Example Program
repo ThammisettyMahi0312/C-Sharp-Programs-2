@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Collections;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StackExample
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Stack stack = new Stack();
+            stack.Push("Book");
+            stack.Push("Pen");
+            stack.Push("Pencil");
+            stack.Push("Bag");
+            stack.Push("Sharpner");
+            Console.WriteLine("Stack Data  ");
+            foreach (object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            stack.Pop();
+            Console.WriteLine("Poping one element ");
+            foreach (object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            stack.Pop();
+            Console.WriteLine("Poping second element ");
+            foreach (object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            stack.Pop();
+            Console.WriteLine("Poping Third element ");
+            foreach (object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            }
+    }
+}
